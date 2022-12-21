@@ -9,8 +9,6 @@ h1 {
     text-align: center;
 }
 
-
-
 header {
     display: flex;
     font-weight: bold;
@@ -42,8 +40,8 @@ ul {
 .imagen_principal img {
     margin: 1%;
     align-items: center;
-    width: 30%;
-    border-radius: 50%;
+    width: 75%;
+    border-radius: 30%;
 }
 
 .img_galeria {
@@ -54,8 +52,10 @@ ul {
     align-items: center;
     transform: translate(10px, 10px);
 }
+
 .img_galeria img {
-width: 300px;}
+    width: 300px;
+}
 
 .img_galeria img:hover {
     height: 400px;
@@ -63,12 +63,22 @@ width: 300px;}
 }
 
 .img_compras {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
 }
-.img_compras img {width: 50%;}
-.img_compras img:hover {width: 100%;}
+
+.img_compras img {
+max-width:  50%;
+}
+
+.img_compras img:hover {
+    width: 100%;
+}
+
 footer {
     background-color: black;
     color: white;
@@ -85,13 +95,51 @@ footer {
     text-align: center;
     justify-content: last baseline;
     width: 100%;
-    
+
 }
 
-@media (max-width 720px) {
-    .img_galeria {display: grid;
+@media (max-width: 720px) {
+    .img_galeria {
+        display: grid;
         grid-template-columns: 1fr;
         width: 75%;
+    }
+
+    .img_compras {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        max-width: 100%;
+        align-items: center;
         
+    }
+    .imagen_principal img {
+        margin: 1%;
+        align-items: center;
+        width: 60%;
+        border-radius: 50%;
+    }
+}
+@media (max-width: 480px) {
+    .img_galeria {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 10%;
+        width: 300px;
+    }
+    .img_compras {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        max-width: 100%;
+        align-items: center;
+    }
+    .imagen_principal img {
+        margin: 1%;
+        align-items: center;
+        width: 76%;
+        border-radius: 50%;
     }
 }
