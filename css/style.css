@@ -48,13 +48,14 @@ ul {
 
 .img_galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    grid-gap: rem;
-    transition: height 1s;
+    grid-template-columns: 1fr;
+    grid-gap: 0.2rem;
     justify-content: center;
     align-items: center;
     transform: translate(10px, 10px);
 }
+.img_galeria img {
+width: 300px;}
 
 .img_galeria img:hover {
     height: 400px;
@@ -88,5 +89,9 @@ footer {
 }
 
 @media (max-width 720px) {
-    .productos
+    .img_galeria {display: grid;
+        grid-template-columns: 1fr;
+        width: 75%;
+        
+    }
 }
