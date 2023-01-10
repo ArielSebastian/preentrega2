@@ -1,0 +1,16 @@
+footer {
+    background-color: $secondary;
+    color: $primary;
+    text-align: center;
+    position: absolute;
+    bottom: 100;
+    width: 100%;
+}
+
+.footer_abajo {
+    background-color: $secondary;
+    color: $primary;
+    text-align: center;
+    justify-content: last baseline;
+    width: 100%;
+}

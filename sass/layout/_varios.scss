@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    color: map-get($colores_basicos, negro );
+    text-shadow: 0px 3px 3px map-get($colores_basicos, gris );
+}
+
+.imagen_principal img {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    align-items: center;
+    @include ancho(30%);
+    height: 10%;
+    border-radius: 10%;
+}   

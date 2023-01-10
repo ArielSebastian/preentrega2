@@ -14,7 +14,7 @@ header {
     font-weight: bold;
     font-size: 1rem;
     font-stretch: extra-expanded;
-    color: rgb(214, 17, 17);
+    color: rgb(54, 150, 110);
 }
 
 .imagen_principal {
@@ -33,9 +33,6 @@ nav {
     columns: 1;
 }
 
-ul {
-    list-style: none;
-}
 
 .imagen_principal img {
     margin: 1%;
